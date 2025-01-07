@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr{
+            position: relative;
+            width: auto;
+        }
+        input[type="text"],[type="password"]{
+            height: 30px;
+        }
+
+        .loginb{
+            margin: 0px 60px 0px 0px;
+            height: 80px;
+            width: 100px;
+            border: 1px solid purple;
+            background-color: purple;
+            color: white;
+        }
+        .b2{
+            height: 40px;
+            width: 150px;
+            border: 1px solid purple;
+            background-color: white;
+            color: purple;
+        }
+
+        .buttons{
+            text-align: center;
+            width: 600px;
+            height: 100px;
+        }
+        .back{
+            background-color: rgb(240, 231, 248);
+            width: auto;
+            height: auto;
+            padding: 50px 50px 50px 80px;
+        }
+
+        .header{
+            padding: 50px;
+            font-size: 30px;
+            color: rgb(71, 17, 122);
+            font-weight: bold;
+        }
+        .td1{
+            position: relative;
+
+            padding: 0px 20px 0px 100px;
+            text-align: left;
+        }
+        hr{
+            border: 0.5px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" name="login">
+        <table class="back">
+            <caption class="header">로그인</caption>
+                <tr>
+                    <td class="td1">아이디</td>
+                    <td class="td2"><input type="text"></td>
+                    <td rowspan="2" class="td3"><input type="button" class="loginb" value="회원 로그인"></td>
+                </tr>
+                <tr>
+                    <td class="td1">비밀번호</td>
+                    <td class="td2"><input type="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="td2">
+                        <input type="checkbox" name="" id="">보안접속
+                    </td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3" class="buttons">
+                        <hr>
+
+                            <input type="button" class="b2" value="아이디 찾기">
+                            <input type="button" class="b2" value="비밀번호 찾기">
+                            <input type="button" class="b2" value="회원가입">
+ 
+
+                   </td>
+
+
+                </tr>
+        </table>
+    </form>
+</body>
+</html>

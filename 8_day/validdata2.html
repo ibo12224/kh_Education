@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //name값을 토대로 값 받아옴
+        function check(){
+            if(document.getElementById("id").value==""){
+                alert("아이디를 입력하세요")
+                document.getElementById("id").focus();
+                return false;
+            }
+            if(document.member.password.value==""){
+                alert("비밀번호를 입력하세요")
+                document.member.password.focus();
+
+                return false;
+            }
+            if(document.member.name.value==""){
+                alert("이름를 입력하세요")
+                document.member.name.focus();
+
+                return false;
+            }
+            document.member.submit();   
+        }
+    </script>
+</head>
+<body onload="document.getElementById('id').focus()">
+    <h2>회원가입</h2>
+    <form action="" method="post" name="member" id="member">
+        아이디: <input type="text" id="id"><br>
+        비밀번호: <input type="text" name="password"><br>
+        이름: <input type="text" name="name"><br>
+        <input type="button" value="회원가입" onclick="check()">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>

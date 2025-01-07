@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 박스모델</title>
+    <style>
+        .btn{
+            background-color: black;
+            color: white;
+            width: 70px;
+            height: 30px;
+                        border-radius: 20px;
+        }
+        form{
+            line-height: 30px;
+            font-size: 10px;
+        }
+        .inp{
+            border-width: 0px 0px 1px 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS 박스모델</h2>
+    <form method="post" name="login" action="">
+        아이디 : <input type="text" class="inp" name="id" placeholder="아이디 입력"><br>
+        비밀번호 : <input type="password" class="inp" name="pw" placeholder="비밀번호 입력"><br>
+        <input type="submit" class="btn" value="로그인">
+        <input type="reset" class="btn" value="취소">
+
+    </form>
+
+</body>
+</html>

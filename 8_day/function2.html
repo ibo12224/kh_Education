@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function(){
+            let userName=prompt("이름 입력")
+            const body=document.getElementById("bd");
+            body.append(document.createElement("p").textContent=`${userName}`);
+        }());
+    </script>
+</head>
+<body id="bd">
+    
+</body>
+</html>

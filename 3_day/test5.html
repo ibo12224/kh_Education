@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Processing</title>
+</head>
+<body>
+    <form action="">
+        <h2>회원가입</h2>
+        아이디 : <input type="text"> <input type="button" value="아이디 중복검사"><br>
+        비밀번호 : <input type="password"><br>
+        이름 : <input type="text"><br>
+        연락처 : <select name="phone" id="">
+            <option value="1">010</option>
+            <option value="2">011</option>
+            <option value="3">016</option>
+            <option value="4">017</option>
+            <option value="5">018</option>
+            <option value="6">019</option>
+        </select>-<input type="text" maxlength="4" style="width: 40px;">-<input type="text" style="width: 40px;" maxlength="4"><br>
+        성별 : <input type="radio" name="gen" value="m" checked>남성 
+        <input type="radio" name="gen" value="w">여성 
+        <br>
+        취미 : 독서 <input type="checkbox" name="j1" checked> 
+        운동 <input type="checkbox" name="j2"> 
+        영화 <input type="checkbox" name="j3"> <br>
+        <textarea name="" id=""  cols="30" rows="3" placeholder="가입인사를 입력해 주세요"></textarea>
+        <br>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="다시쓰기">
+    </form>
+</body>
+</html>

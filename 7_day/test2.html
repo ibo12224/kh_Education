@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num=parseInt(prompt('입장객은?'));
+        let num1=parseInt(prompt('한 줄에 않을 사람은?'));
+        let result=0;
+        if(num%num1==0){
+            result=num/num1;
+        }
+        else{
+            result=parseInt(num/num1)+1;
+        }
+        document.write(`모두 ${result}개의 줄이 필요합니다.`);
+        // document.write('모두'+result+'개의 줄이 필요합니다.');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" name="custom">
+        <table border="1">
+            <tr>
+                <th>아이디 </th>
+                <td><input type="text" name="id" required></td>
+            </tr>
+            <tr>
+                <th>패스워드</th>
+                <td><input type="password" name="pw" required></td>
+
+            </tr>
+            <tr>
+                <th rowspan="2">이메일</th>
+                <td>
+                    <input type="text">@
+                    <select name="" id="">
+                        <option value="naver.com">naver.com</option>
+                        <option value="dauml.net">dauml.net</option>
+                        <option value="google.com">google.com</option>
+                        <option value="11">11</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    뉴스를 받으시겠습니까? 
+                    <input type="radio" name="agr" value="agr1" checked> 수신동의
+                    <input type="radio" name="agr" value="agr2"> 동의안함
+                </td>
+            </tr>
+            <tr>
+                <th>관심정보</th>
+                <td>
+                    <input type="checkbox" value="s3">피부관리 
+                    <input type="checkbox" value="s3">천연화장품 
+                    <input type="checkbox" value="s3">피부나이측정 
+                </td>
+            </tr>
+            <tr>
+                <th>메모</th>
+                <td><textarea name="" id="" cols="60" rows="3"></textarea></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="확인">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

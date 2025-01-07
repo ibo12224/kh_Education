@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Organizing_data",
+			"path": "."
+		},
+		{
+			"name": "medias",
+			"path": "../Users/user/Downloads/4장/medias"
+		},
+		{
+			"name": "images",
+			"path": "../Users/user/Downloads/4장/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Organizing_data"
+	}
+}

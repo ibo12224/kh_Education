@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입 정보 입력</h1>
+    <form method="get" name="in" action="">
+        <fieldset>
+            <legend>회원가입 정보 입력</legend>
+            <table border="1">
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td>    
+                        <input type="text">
+                        <input type="button" required value="아이디중복확인">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="password" minlength="6" maxlength="12">
+                        (공백없이 6~12자리 이내, 영문과 숫자 조합)
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td>
+                        <select name="phone" id="">
+                            <option value="1">010</option>
+                            <option value="2">011</option>
+                            <option value="3">016</option>
+                            <option value="4">017</option>
+                            <option value="5">018</option>
+                            <option value="6">019</option>
+                        </select>-<input type="text" maxlength="4" style="width: 80px;">-<input type="text" style="width: 80px;" maxlength="4"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">집주소</th>
+                    <td><input type="text"><input type="button" value="우편번호찾기"></td>
+                    
+                </tr>
+                <tr><td><input type="text"></td></tr>
+                <tr>
+                    <th>사진</th>
+                    <td>
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <th>회원구분</th>
+                    <td>
+                        <input type="radio" name="per">개인회원 
+                        <input type="radio" name="per">기업회원 
+                    </td>
+                </tr>
+                <tr>
+                    <th>메일링서비스</th>
+                    <td>
+                        <input type="checkbox" name="info1">연예정보 
+                        <input type="checkbox" name="info2">문화정보 
+                        <input type="checkbox" name="info3">쇼핑정보 
+                        <input type="checkbox" name="info4">날씨정보 
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th>자기소개</th>
+                    <td>
+                        <textarea name="" id="" placeholder="20자 이상 적어주세요!" cols="80" rows="3"></textarea>
+                    </td>
+                </tr>
+               
+            </table>
+ <input type="submit" value="확인">
+                <input type="reset" value="취소">
+
+
+
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+</html>

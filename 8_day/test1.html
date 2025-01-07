@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window.onload=function (){   }
+        function check(){
+            id=document.getElementById("id");
+            
+            pw=document.getElementById("pw");
+            if(id.value==""){
+                alert("아이디를 입력하세요!");
+                return 0;
+            }
+            if(pw.value.length<8){
+                alert("비밀번호는 8자 이상으로 입력하세요!");
+                return 0;
+            }
+        }
+    </script>
+</head>
+<body onload="document.getElementById('id').focus()">
+    <form action="" method="post" name="mem">
+        <h2>회원가입</h2>
+        아이디 : <input type="text" id="id"><br>
+        비밀번호 : <input type="password" id="pw"><br>
+        연락처 : <input type="text" id="ph"><br>
+        주소 : <input type="text" id="ad"><br>
+        <input type="button" value="회원가입" onclick="check()">
+        <input type="reset" name="" id="" value="취소">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비중요 애니메이션</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 60px auto;
+            animation: rotate 1.5s infinite, background1 1.5s infinite alternate;
+            
+        }
+        @keyframes rotate{
+            0%{transform:  perspective(120px) rotate(0deg) rotateY(0deg);}
+            50%{transform:  perspective(120px) rotate(-180deg) rotateY(0deg);}
+            100%{transform:  perspective(120px) rotate(-180deg) rotateY(-180deg);}
+        }
+        @keyframes background1{
+            0%{ background-color: red;        }
+            50%{ background-color: green;        }
+            100%{ background-color: blue;        }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

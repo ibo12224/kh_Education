@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quest4</title>
+    <style>
+        .bu{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form method="post" name="test" action="">
+            <table>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td>
+                        <input type="email" name="email" placeholder="이메일을 입력하세요"></td>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>홈페이지</td>
+                    <td><input type="text" name="hpage" placeholder="홈페이지를 입력하세요"></td>
+                </tr>
+                <tr>
+                    <td>대학졸업년도</td>
+                    <td><input type="date" name="schollday"></td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td><input type="text" name="birthday"></td>
+                </tr>
+                <tr>
+                    <td>연어평가등급</td>
+                    <td><input type="range"></td>
+                </tr>
+                <tr>
+                    <td>좋아하는색</td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="bu">
+                        <input type="button" value="확인" onclick="check()">
+                    <input type="reset" value="취소">
+                    </td>
+                </tr>
+                    
+            </table>
+
+
+        </form>
+    </div>
+    <script src="ex4.js">
+
+    </script>
+</body>
+</html>

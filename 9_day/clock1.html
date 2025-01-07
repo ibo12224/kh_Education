@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock1{
+            color:white;
+            background-color: #000;
+            border: 1px solid black;
+            width: 70px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock1"></div>
+    <script>
+        function clock(){
+
+            let now= new Date();
+            let h= now.getHours();
+            let m=now.getMinutes();
+            let s=now.getSeconds();
+            let str=h+":"+m+":"+s;
+            document.getElementById("clock1").innerHTML=str;
+            // setTimeout("clock()",1000)
+            setInterval(clock,1000);
+        }
+        clock();
+    </script>
+</body>
+</html>

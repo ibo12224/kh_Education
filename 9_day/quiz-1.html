@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <p>현재시각 <span id="current" class="display"></span></p>
+    <script>
+        setInterval(displayNow,1000);
+        function displayNow(){
+            let now= new Date();
+            let currentTime=now.toLocaleDateString();
+            console.log(currentTime);
+            document.getElementById("current").innerHTML=currentTime;
+        }
+    </script>
+</body>
+</html>

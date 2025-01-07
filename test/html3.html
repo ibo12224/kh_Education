@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr{
+            text-align: left;
+        }
+        
+        span{
+            width: 140px;
+        }
+        .gen{
+            text-align: right;
+            left: -10px;
+            z-index: 99;
+        }
+    </style>
+    <script>
+        id=document.getElementById("id");
+        // window.onload=function (){id.focus();   }
+        function check(){
+            let pw1=document.getElementById("pw1");
+            let pw2=document.getElementById("pw2");
+            if(pw1.value != pw2.value){
+                alert("비밀번호를 올바르게 입력하세요!");
+                return 0;
+            }
+            let nam=document.getElementById("name1");
+            if(!nam){
+                alert("이름을 입력하세요");
+
+            }
+            
+            let kor=/^[가-힣]{2,}$/;
+            if(nam!=kor){
+                alert("한글로 입력하세요");
+            }
+
+            document.mem.submit();
+        }
+        function ch(){
+            
+        }
+    </script>
+</head>
+<body onload="document.getElementById('id').focus();">
+    <form action="" method="post" name="mem">
+        <fieldset>
+            <legend>회원정보입력</legend>
+        <table>
+            <tr>
+                <td><span>아이디</span></td>
+                <td>
+                    <input type="text" id="id">
+                    <input type="button" onclick="ch()" value="중복검사">
+                </td>
+            </tr>
+            <tr>
+                <td><span>패스워드</span></td>
+                <td><input type="password" id="pw1" required></td>
+            </tr>
+            <tr>
+                <td><span>패스워드 확인</span></td>
+                <td><input type="password" id="pw2"></td>
+            </tr>
+            <tr>
+                <td><span>이름</span></td>
+                <td><input type="text" id="name1"></td>
+            </tr>
+            <tr>
+                <td><span>휴대폰 번호</span></td>
+                <td><input type="text" id="ph"></td>
+            </tr>
+            <tr>
+                <td><span>이메일</span></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td><span>생일</span></td>
+                <td><input type="date" id="birth"></td>
+            </tr>
+            <tr>
+                <td><span>홈페이지</span></td>
+                <td><input type="text" id="homepage"></td>
+            </tr>
+            <tr>
+                <td class="gen"><input type="radio" name="gen" id="gender1" value="man"></td>
+                <td class="cen">남성</td>
+            </tr>
+            <tr>
+                <td class="gen"><input type="radio" name="gen" id="gender2" value="woman"></td>
+                <td class="cen">여성</td>
+            </tr>
+        </table>
+
+        
+        </fieldset>
+        <input type="button" value="제출" onclick="check()">
+        <input type="reset" name="" id="" value="초기화">
+    </form>
+</body>
+</html>

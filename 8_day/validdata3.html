@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //id값을 토대로 값 받아옴
+        function check(){
+            let gd=document.getElementsByName("gen");
+            if(gd[0].checked==false && gd[1].checked==false){
+                alert("성별 중 하나를 선택하세요")
+                 return false
+            }
+            if(document.getElementById("hobby1").checked==false &&
+            document.getElementById("hobby2").checked==false &&
+            document.getElementById("hobby3").checked==false
+            ){
+                alert("취미를 하나이상 선택하세요")
+                return false
+            }
+
+            if(document.getElementById("tel1").value==""){
+                alert("국번 중 하나를 선택하세요")
+                return false
+            }
+            if(document.getElementById("tel2").value=="" || document.getElementById("tel3").value==""){
+                alert("연락처를 모두 입력하세요")
+                return false
+            }
+            if(document.getElementById("profile").value==""){
+                alert("자기소개서를 올바르게 입력하세요")
+                return false
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form action="" method="post" id="member" id="member">
+        성별 : 남<input type="radio" id="gender" value="남" name="gen">
+               여<input type="radio" id="gender" value="여" name="gen"><br>
+        취미 :  등산<input type="checkbox" id="hobby1" value="등산">
+                여행<input type="checkbox" id="hobby2" value="여행">
+                음앙감상<input type="checkbox" id="hobby3" value="음악감상"><br>
+        연락처: <select id="tel1">
+            <option value="">선택해주세요</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+
+        </select>
+        - <input type="text" id="tel2"  maxlength="4" size="4">
+        - <input type="text" id="tel3"  maxlength="4" size="4"><br>
+        자기소개 : <textarea id="profile"  rows="5" cols="30"></textarea><br>
+        <input type="button" value="회원가입" onclick="check()">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>

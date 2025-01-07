@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="images/kitty-1.png" alt="" id="cat">
+
+    </div>
+        <script>
+
+        let cat=document.querySelector("#cat");
+        //람다함수
+        // cat.onmouseover=change1;
+ 
+        // cat.onmouseout=change2;
+        cat.addEventListener('mouseover',change1);
+        cat.addEventListener('mouseout',change2);
+
+        function change1(){
+            cat.src="images/kitty-2.png";
+        }
+        function change2(){
+            cat.src="images/kitty-1.png";
+        }
+    </script>
+</body>
+</html>

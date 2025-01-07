@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //name값을 토대로 값 받아옴
+        function check(){
+            let pw=document.getElementById("password").value;
+            if(pw==""){
+                alert("아이디를 입력하세요")
+                document.getElementById("password").focus();
+                return false;
+            }
+            
+            if(pw.length<8||pw.length>12){
+                alert("비밀번호는 8자리 이상 12자리 이하로 입력하세요.")
+                pw="";
+                document.getElementById("password").focus();
+                return false;
+            }
+
+            if(pw != document.getElementById("password1").value){
+                alert("비밀번호 불일치");
+                pw="";
+                document.getElementById("password1").value="";
+                document.getElementById("password1").focus();
+                return false;
+            }
+            document.member.submit();
+        }
+    </script>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form action="" method="post" name="member" id="member">
+        비밀번호: <input type="text" id="password"><br>
+        비밀번호: <input type="text" id="password1"><br>
+        <input type="button" value="회원가입" onclick="check()">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
